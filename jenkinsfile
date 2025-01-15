@@ -11,7 +11,10 @@ pipeline {
         }  
         stage('Build Docker Image') {  
             steps {  
-                sh 'docker build -t $registry .'  
+                powershell '''
+                                # PowerShell commands to build the Docker image
+                                docker build -t my-image .
+                            '''
             }  
         }  
         stage('Push Image') {  
