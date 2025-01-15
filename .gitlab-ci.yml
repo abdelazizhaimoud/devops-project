@@ -12,8 +12,8 @@ test:
 build:
   stage: build
   script:
-    - docker build -t registry.gitlab.com/<your-username>/<repo-name>:latest .
-    - docker push registry.gitlab.com/<your-username>/<repo-name>:latest
+    - docker build -t highmood2k/devops-project:latest .
+    - docker push highmood2k/devops-project:latest
 
 deploy:
   stage: deploy
