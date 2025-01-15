@@ -8,7 +8,7 @@ test:
   image: node:16  # Use an official Node.js Docker image
   script:
     - npm install
-    - npx mocha test.js
+    - npm test
 
 build:
   stage: build
