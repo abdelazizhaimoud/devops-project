@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
 const startServer = () => {
   return new Promise((resolve) => {
     server = app.listen(PORT, () => {
-      console.log(`Server running on http://localhost:${PORT}`);
+      console.log(` ---  Server running on http://localhost:${PORT}`);
       resolve();
     });
   });
