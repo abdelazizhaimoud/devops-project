@@ -1,7 +1,7 @@
 pipeline {  
     agent any  
     environment {  
-        registry = "registry.gitlab.com/<your-username>/<repo-name>"  
+        registry = "highmood2k/devops-project"  
     }  
     stages {  
         stage('Checkout') {  
